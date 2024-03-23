@@ -8,8 +8,8 @@ if (isset($_POST['url'])) {
     $stmt = $db->prepare("INSERT INTO urls (original_url, short_code) VALUES (?, ?)");
     $stmt->execute([$url, $shortCode]);
 
-    $shortenedUrl = 'http://' . $_SERVER['HTTP_HOST'] . '/' . $shortCode;
-    echo "Shortened URL: <a href='$shortenedUrl'>$shortenedUrl</a>";
+    $shortenedUrl = 'https://' . $_SERVER['HTTP_HOST'] . '/' . $shortCode;
+    echo "<a href='$shortenedUrl' target='_blank'>$shortenedUrl</a>";
 }
 
 function generateShortCode($length = 6) {

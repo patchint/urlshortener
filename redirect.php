@@ -4,6 +4,7 @@ include 'db.php';
 if (isset($_GET['code'])) {
     $code = $_GET['code'];
 
+    // Look up the short code in the database
     $stmt = $db->prepare("SELECT original_url FROM urls WHERE short_code = ?");
     $stmt->execute([$code]);
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
