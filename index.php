@@ -18,8 +18,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://short.patchli.fr">
-    <meta property="og:title" content="Shorten your URLs !">
-    <meta property="og:description" content="URLShortener | patchli.fr">
+    <meta property="og:title" content="URLShortener | patchli.fr">
+    <meta property="og:description" content="Shorten your URLs !">
 
     <!-- Twitter -->
     <meta property="twitter:url" content="https://short.patchli.fr/">
